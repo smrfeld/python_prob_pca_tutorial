@@ -43,7 +43,7 @@ def plot_data_visible_and_activated_2d(
     data : np.array, 
     actVisible : np.array
     ):
-    dim_vis = data.shape[1]
+    # dim_vis = data.shape[1]
 
     fig, axs = plt.subplots(1,2,figsize=(12,5))
     for i in range(0, 2):
