@@ -1,5 +1,7 @@
 # Tutorial on probabilistic PCA in Python and Mathematica
 
+[You can read a complete tutorial on Medium here.](https://medium.com/practical-coding/the-simplest-generative-model-you-probably-missed-c840d68b704)
+
 ## Running
 
 * Python: `python prob_pca.py`. The figures are output to the [figures_py](figures_py) directory.
@@ -42,7 +44,6 @@ Assume the latent distribution has the form:
 The visibles are sampled from the conditional distribution:
 
 <img src="figures_math/vis_from_hid.png" alt="drawing" height="100%"/>
-<img src="figures_math/m_mat.png" alt="drawing" height="100%"/>
 
 From these, the marginal distribution for the visibles is:
 
@@ -102,6 +103,7 @@ print(weight_ml)
 After determining the ML parameters, we can sample the hidden units from the visible according to:
 
 <img src="figures_math/hid_from_vis.png" alt="drawing" height="100%"/>
+<img src="figures_math/m_mat.png" alt="drawing" height="100%"/>
 
 You can implement it in Python as follows:
 ```
